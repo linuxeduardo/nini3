@@ -1,0 +1,29 @@
+.btn {
+  border-radius: 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 18px;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  padding: 8px 21px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+  }
+}
+.btn {
+  &.btn-dark {
+    background-color: $color-1;
+    border: 1px solid $color-3;
+    color: $color-4;
+  }
+  &.btn-light {
+    background-color: $color-4;
+    border: 1px solid $color-4;
+    color: $color-1;
+  }
+}

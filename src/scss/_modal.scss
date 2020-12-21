@@ -1,0 +1,31 @@
+.modal {
+  border: 1px solid $color-4;
+  .modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    h5 {
+      padding: 1rem 1rem 0.5rem;
+      margin: 0;
+    }
+    button {
+      border: none;
+      color: $color-3;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 1rem;
+      outline: none;
+    }
+  }
+  .modal-content {
+    border-top: 1px solid $color-7;
+    border-bottom: 1px solid $color-7;
+    margin: 0.5rem;
+    padding: 1.5rem 0.5rem;
+  }
+  .modal-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

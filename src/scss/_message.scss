@@ -1,0 +1,12 @@
+.message {
+  padding: 1.25rem 1.5rem;
+  &.message-light {
+    background-color: $color-1;
+    color: $color-4;
+    border: 1px solid $color-4;
+  }
+  &.message-dark {
+    background-color: $color-4;
+    color: $color-1;
+  }
+}

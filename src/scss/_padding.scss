@@ -1,0 +1,64 @@
+$num: 9;
+
+$pt-1: 0.25rem;
+$pt-2: 0.5rem;
+$pt-3: 1rem;
+$pt-4: 1.5rem;
+$pt-5: 2rem;
+$pt-6: 4rem;
+
+// padding
+@for $i from 1 through $num {
+  .pt-#{$i} {
+    padding-top: #{($i * 0.25) + 'rem'};
+  }
+}
+@for $i from 1 through $num {
+  .pb-#{$i} {
+    padding-bottom: #{($i * 0.25) + 'rem'};
+  }
+}
+@for $i from 1 through $num {
+  .pl-#{$i} {
+    padding-left: #{($i * 0.25) + 'rem'};
+  }
+}
+@for $i from 1 through $num {
+  .pr-#{$i} {
+    padding-right: #{($i * 0.25) + 'rem'};
+  }
+}
+// padding 4 sides
+@for $i from 1 through $num {
+  .p-#{$i} {
+    padding: #{($i * 0.25) + 'rem'};
+  }
+}
+
+// margin
+@for $i from 1 through $num {
+  .mt-#{$i} {
+    margin-top: #{($i * 0.25) + 'rem'};
+  }
+}
+@for $i from 1 through $num {
+  .mb-#{$i} {
+    margin-bottom: #{($i * 0.25) + 'rem'};
+  }
+}
+@for $i from 1 through $num {
+  .ml-#{$i} {
+    margin-left: #{($i * 0.25) + 'rem'};
+  }
+}
+@for $i from 1 through $num {
+  .mr-#{$i} {
+    margin-right: #{($i * 0.25) + 'rem'};
+  }
+}
+// margin 4 sides
+@for $i from 1 through $num {
+  .m-#{$i} {
+    margin: #{($i * 0.25) + 'rem'};
+  }
+}
