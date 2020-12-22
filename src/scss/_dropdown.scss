@@ -1,0 +1,35 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  & .btn-dropdown {
+    font-size: 1rem;
+    background-color: $color-1;
+    border: 1px solid $color-7;
+    min-width: 160px;
+    outline: none;
+    padding: 0.5rem 0.4rem;
+    text-align: center;
+  }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  & a {
+    text-decoration: none;
+    color: $color-5;
+    background-color: $color-1;
+    display: block;
+    text-align: center;
+    padding: 0.4rem;
+    &:hover {
+      background-color: $color-8;
+    }
+  }
+}
+// TODO: remove border, dark, align left~center
+
+.dropdown-show {
+  display: block;
+}

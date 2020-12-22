@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nini3</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>nini3</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <!-- buttons -->
+      <div class="row">
+        <div class="col">
+          <h2>button</h2>
+          <div class="button">
+            <button class="btn btn-light">button</button
+            ><button class="btn btn-dark">button</button>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- font scale -->
+      <div class="row">
+        <div class="col">
+          <h1>h1 Setting..</h1>
+          <h2>h2 Setting one column width</h2>
+          <h3>h3 Setting one column width</h3>
+          <h4>h4 Setting one column width</h4>
+          <h5>h5 Setting one column width</h5>
+          <h6>h6 Setting one column width</h6>
+        </div>
+      </div>
+      <!-- text -->
+      <div class="row">
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aperiam consequuntur tempore voluptates illum voluptatem
+            quaerat repudiandae itaque? Eaque doloremque nulla
+            officiis ducimus, impedit distinctio vero ratione esse
+            quae eligendi ipsum.
+          </p>
+          <p>
+            A função CSS rotate() define uma transformação que gira um
+            elemento em torno de um ponto fixo no plano 2D, sem
+            deformá-lo. O resultado é um tipo de dados.
+          </p>
+        </div>
+      </div>
+      <!-- grid -->
+      <h2>grid</h2>
+      <div class="container test-grid">
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">2</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">.col-sm-4</div>
+          <div class="col-sm-4">2</div>
+          <div class="col-sm-4">3</div>
+        </div>
+      </div>
+      <!-- bootstrap -->
+      <h3>grid stack</h3>
+      <div class="container test-grid">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
 
-  <div class="container">
-    <!-- buttons -->
-    <div class="row">
-      <div class="col">
-        <h2>button</h2>
-        <div class="button">
-          <button class="btn btn-light">button</button><button class="btn btn-dark">button</button>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <h3>gird reponsive</h3>
+        <div class="row">
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
         </div>
-        <!--  -->
-      </div>
-    </div>
-    <!-- font scale -->
-    <div class="row">
-      <div class="col">
-        <h1>h1 Setting..</h1>
-        <h2>h2 Setting one column width</h2>
-        <h3>h3 Setting one column width</h3>
-        <h4>h4 Setting one column width</h4>
-        <h5>h5 Setting one column width</h5>
-        <h6>h6 Setting one column width</h6>
-      </div>
-    </div>
-    <!-- grid -->
-    <h2>grid</h2>
-    <div class="container test-grid">
-      <div class="row">
-        <div class="col">1</div>
-        <div class="col">2</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">.col-sm-4</div>
-        <div class="col-sm-4">2</div>
-        <div class="col-sm-4">3</div>
-      </div>
-    </div>
-    <!-- bootstrap -->
-    <h3>grid responsive</h3>
-    <div class="container test-grid">
-      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-      <div class="row">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      </div>
-    
-      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-      <div class="row">
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      </div>
-    
-      <!-- Columns are always 50% wide, on mobile and desktop -->
-      <div class="row">
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
-      </div>
-    </div>
-    <!-- grid nested -->
-    <h3>nested grid</h3>
-    <div class="container test-grid">
-      <div class="row">
-        <div class="col-sm-3">
-          Level 1: .col-sm-3
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6">.col-6</div>
+          <div class="col-6">.col-6</div>
         </div>
+      </div>
+      <!-- grid nested -->
+      <div class="row">
+        <div class="col-sm-3">Level 1: .col-sm-3</div>
         <div class="col-sm-9">
           <div class="row">
             <div class="col-8 col-sm-6">
@@ -84,33 +101,38 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- form -->
-    <div class="container">
+
+      <!-- form -->
+      <h2>form</h2>
       <div class="row">
         <div class="col">
           <form>
             <div class="mb-3">
               <label for="">Username</label>
-              <input type="text" class="form-input-text">
+              <input type="text" class="form-input-text" />
               <div class="form-small-text">Micro message.</div>
             </div>
             <!--  -->
             <div class="mb-3">
               <label for="">Email</label>
-              <input type="email" placeholder="email here" class="form-input-text">
+              <input
+                type="email"
+                placeholder="email here"
+                class="form-input-text"
+              />
             </div>
             <!--  -->
             <div class="mb-3">
-              <button type="submit" class="btn btn-light">Submit</button>
+              <button type="submit" class="btn btn-light">
+                Submit
+              </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
 
-    <!-- message -->
-    <div class="container">
+      <!-- message -->
+      <h2>message</h2>
       <div class="row">
         <div class="col">
           <div class="message message-light">
@@ -121,40 +143,68 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- modal -->
-    <div class="container">
+      <!-- modal -->
+      <h2>modal</h2>
       <div class="row">
         <div class="col my-3">
           <div class="modal">
+            <!-- header -->
             <div class="modal-header">
-              <h5>Modal Title</h5>
-              <button>&#x2715</button>
+              <h4>Modal Title</h4>
+              <button class="btn-close">&#x2715;</button>
             </div>
             <!-- content -->
             <div class="modal-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos itaque cumque.
+              O método every() testa se todos os elementos do array
+              passam pelo teste implementado pela função fornecida.
             </div>
-            <!-- button -->
-            <div class="modal-button">
-              <button class="btn btn-dark">close modal</button><button class="btn btn-light">ok go</button>
+            <!-- footer -->
+            <div class="modal-footer">
+              <button class="btn btn-dark">cancel</button>
+              <button class="btn btn-light">ok</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--  -->
-    <div class="container">
+      <!--  -->
+      <h2>dropdown</h2>
+      <div class="row">
+        <div class="col">
+          <!--  -->
+          <div class="dropdown">
+            <button class="btn-dropdown" onclick="handleDropdown()">
+              drop
+            </button>
+            <!--  -->
+            <div id="dropdown" class="dropdown-content">
+              <a href="#">text</a>
+              <a href="#">contact</a>
+              <a href="#">about</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
       <div class="row">
         <div class="col"></div>
       </div>
+      <!--  -->
+      <div class="row">
+        <div class="col"></div>
+      </div>
+      <!--  -->
+      <div class="row">
+        <div class="col"></div>
+      </div>
+      <!-- end -->
     </div>
+    <small>grid bootstrap v5</small>
+    <small>reset meyerweb</small>
 
-    <!-- end -->
-  </div>
-  <small>grid bootstrap v5</small>
-  <small>reset meyerweb</small>
-</body>
+    <!-- js -->
+    <script src="./js/nini3.js"></script>
+  </body>
 </html>

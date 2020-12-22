@@ -151,6 +151,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: #343841;
+  letter-spacing: 0.01rem;
 }
 
 p {
@@ -5058,7 +5059,7 @@ small,
 .message.message-light {
   background-color: #f2f2f2;
   color: #343841;
-  border: 1px solid #343841;
+  border: 1px solid #84878c;
 }
 
 .message.message-dark {
@@ -5446,54 +5447,116 @@ form > div input {
 }
 
 .modal {
-  border: 1px solid #343841;
+  padding: 1rem;
+  border: 1px solid #c5cbd5;
 }
 
 .modal .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0.5rem 0 1rem 0;
+  position: relative;
 }
 
-.modal .modal-header h5 {
-  padding: 1rem 1rem 0.5rem;
+.modal .modal-header h4 {
   margin: 0;
+  font-size: 1.3rem;
 }
 
-.modal .modal-header button {
+.modal .modal-header .btn-close {
   border: none;
-  color: #5e6673;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   outline: none;
 }
 
-.modal .modal-content {
-  border-top: 1px solid #c5cbd5;
-  border-bottom: 1px solid #c5cbd5;
-  margin: 0.5rem;
-  padding: 1.5rem 0.5rem;
+.modal .modal-header .btn-close:hover {
+  -webkit-animation: spin 0.2s linear forwards;
+          animation: spin 0.2s linear forwards;
 }
 
-.modal .modal-button {
+.modal .modal-content {
+  padding: 1rem 0;
+  border-top: 1px solid #c5cbd5;
+  border-bottom: 1px solid #c5cbd5;
+}
+
+.modal .modal-footer {
+  padding: 1rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .btn-dropdown {
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  border: 1px solid #c5cbd5;
+  min-width: 160px;
+  outline: none;
+  padding: 0.5rem 0.4rem;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #212226;
+  background-color: #f2f2f2;
+  display: block;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #dfe3e9;
+}
+
+.dropdown-show {
+  display: block;
+}
+
 body {
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
 }
 
 .test-grid .row > div {
