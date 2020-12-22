@@ -1,4 +1,6 @@
 .message {
+  display: block;
+  min-width: 300px;
   padding: 1.25rem 1.5rem;
   &.message-light {
     background-color: $color-1;

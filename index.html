@@ -13,109 +13,90 @@
   <body>
     <div class="container">
       <!-- buttons -->
-      <div class="row">
+      <h2>button</h2>
+      <div class="row separator">
         <div class="col">
-          <h2>button</h2>
           <div class="button">
-            <button class="btn btn-light">button</button
-            ><button class="btn btn-dark">button</button>
+<button class="btn btn-light">button dark</button
+><button class="btn btn-dark">button light</button
+><button class="btn btn-dark btn-disabled">
+disabled
+</button>
           </div>
           <!--  -->
         </div>
-      </div>
-      <!-- font scale -->
-      <div class="row">
+        <!-- code -->
         <div class="col">
-          <h1>h1 Setting..</h1>
-          <h2>h2 Setting one column width</h2>
-          <h3>h3 Setting one column width</h3>
-          <h4>h4 Setting one column width</h4>
-          <h5>h5 Setting one column width</h5>
-          <h6>h6 Setting one column width</h6>
+          <h3 class='sub-title'>code</h3>
+          <code>&lt;button class=&quot;btn btn-light&quot;&gt;button dark&lt;/button&gt;
+&lt;button class=&quot;btn btn-dark&quot;&gt;button light&lt;/button&gt;
+&lt;button class=&quot;btn btn-dark btn-disabled&quot;&gt;disabled&lt;/button&gt;</code>
         </div>
       </div>
-      <!-- text -->
-      <div class="row">
+      <!-- font scale -->
+      <h2>Title</h2>
+      <div class="row separator">
         <div class="col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aperiam consequuntur tempore voluptates illum voluptatem
-            quaerat repudiandae itaque? Eaque doloremque nulla
-            officiis ducimus, impedit distinctio vero ratione esse
-            quae eligendi ipsum.
-          </p>
+
+<h1>h1 Setting..</h1>
+<h2>h2 Setting one column width</h2>
+<h3 class='sub-title'>h3 Setting one column width</h3>
+<h4>h4 Setting one column width</h4>
+<h5>h5 Setting one column width</h5>
+<h6>h6 Setting one column width</h6>
+        </div>
+        <!-- code -->
+        <div class="col">
+          <h3 class='sub-title'>code</h3>
+<code>&lt;h1&gt;h1 Setting..&lt;/h1&gt;
+&lt;h2&gt;h2 Setting one column width&lt;/h2&gt;
+&lt;h3&gt;h3 Setting one column width&lt;/h3&gt;
+&lt;h4&gt;h4 Setting one column width&lt;/h4&gt;
+&lt;h5&gt;h5 Setting one column width&lt;/h5&gt;
+&lt;h6&gt;h6 Setting one column width&lt;/h6&gt;</code>
+        </div>
+      </div>
+
+      <!-- text -->
+      <h2>Paragraph</h2>
+      <div class="row separator">
+        <div class="col">
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aperiam consequuntur tempore voluptates illum voluptatem
+quaerat repudiandae itaque? Eaque doloremque nulla
+officiis ducimus, impedit distinctio vero ratione esse
+quae eligendi ipsum.
+</p>
           <p>
             A função CSS rotate() define uma transformação que gira um
             elemento em torno de um ponto fixo no plano 2D, sem
             deformá-lo. O resultado é um tipo de dados.
           </p>
         </div>
-      </div>
-      <!-- grid -->
-      <h2>grid</h2>
-      <div class="container test-grid">
-        <div class="row">
-          <div class="col">1</div>
-          <div class="col">2</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">.col-sm-4</div>
-          <div class="col-sm-4">2</div>
-          <div class="col-sm-4">3</div>
-        </div>
-      </div>
-      <!-- bootstrap -->
-      <h3>grid stack</h3>
-      <div class="container test-grid">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="row">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <h3>gird reponsive</h3>
-        <div class="row">
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-          <div class="col-6">.col-6</div>
-          <div class="col-6">.col-6</div>
-        </div>
-      </div>
-      <!-- grid nested -->
-      <div class="row">
-        <div class="col-sm-3">Level 1: .col-sm-3</div>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-8 col-sm-6">
-              Level 2: .col-8 .col-sm-6
-            </div>
-            <div class="col-4 col-sm-6">
-              Level 2: .col-4 .col-sm-6
-            </div>
-          </div>
+        <!-- code -->
+        <div class="col">
+          <h3 class='sub-title'>code</h3>
+          <code>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aperiam consequuntur..&lt;/p&gt;</code>
         </div>
       </div>
 
       <!-- form -->
       <h2>form</h2>
-      <div class="row">
+      <div class="row separator">
         <div class="col">
           <form>
             <div class="mb-3">
-              <label for="">Username</label>
-              <input type="text" class="form-input-text" />
+              <label for="usernameInput">Username</label>
+              <input id="usernameInput" type="text" class="form-input-text" />
               <div class="form-small-text">Micro message.</div>
             </div>
             <!--  -->
             <div class="mb-3">
-              <label for="">Email</label>
+              <label for="emailInput">Email</label>
               <input
+              id="emailInput"
                 type="email"
                 placeholder="email here"
                 class="form-input-text"
@@ -129,11 +110,33 @@
             </div>
           </form>
         </div>
+        <!-- code -->
+        <div class="col">
+          <h3 class='sub-title'>code</h3>
+<code>&lt;form&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;&quot;&gt;Username&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-input-text&quot; /&gt;
+    &lt;div class=&quot;form-small-text&quot;&gt;Micro message.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot;
+    placeholder=&quot;email here&quot;
+    class=&quot;form-input-text&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-light&quot;&gt;
+    Submit
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code>
+        </div>
       </div>
 
       <!-- message -->
       <h2>message</h2>
-      <div class="row">
+      <div class="row separator">
         <div class="col">
           <div class="message message-light">
             A simple primary alert—check it out!
@@ -142,12 +145,22 @@
             A simple primary alert—check it out!
           </div>
         </div>
+        <!-- code -->
+        <div class="col">
+          <h3 class='sub-title'>code</h3>
+<code>&lt;div class=&quot;message message-light&quot;&gt;
+A simple primary alert&mdash;check it out!
+&lt;/div&gt;
+&lt;div class=&quot;message message-dark mt-3&quot;&gt;
+A simple primary alert&mdash;check it out!
+&lt;/div&gt;;</code>
       </div>
+      </div>  
 
       <!-- modal -->
       <h2>modal</h2>
-      <div class="row">
-        <div class="col my-3">
+      <div class="row separator">
+        <div class="col my-3 ">
           <div class="modal">
             <!-- header -->
             <div class="modal-header">
@@ -165,12 +178,31 @@
               <button class="btn btn-light">ok</button>
             </div>
           </div>
-        </div>
+        </div>  
+      
+        <!-- code -->
+        <div class="col">
+          <h3 class='sub-title'>code</h3>
+<code>&lt;div class=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h4&gt;Modal Title&lt;/h4&gt;
+        &lt;button class=&quot;btn-close&quot;&gt;&amp;#x2715;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        O m&eacute;todo every() testa se todos os elementos do array
+        passam pelo teste implementado pela fun&ccedil;&atilde;o fornecida.
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button class=&quot;btn btn-dark&quot;&gt;cancel&lt;/button&gt;
+        &lt;button class=&quot;btn btn-light&quot;&gt;ok&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
       </div>
+    </div>
 
       <!--  -->
       <h2>dropdown</h2>
-      <div class="row">
+      <div class="row separator">
         <div class="col">
           <!--  -->
           <div class="dropdown">
@@ -185,24 +217,36 @@
             </div>
           </div>
         </div>
+         <!-- code -->
+         <div class="col">
+          <h3 class='sub-title'>code</h3>
+<code>&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn-dropdown&quot; onclick=&quot;handleDropdown()&quot;&gt;
+    drop
+    &lt;/button&gt;
+    &lt;div id=&quot;dropdown&quot; class=&quot;dropdown-content&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;text&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;contact&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;about&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
       </div>
 
-      <!--  -->
-      <div class="row">
-        <div class="col"></div>
-      </div>
-      <!--  -->
-      <div class="row">
-        <div class="col"></div>
-      </div>
-      <!--  -->
-      <div class="row">
-        <div class="col"></div>
-      </div>
       <!-- end -->
     </div>
-    <small>grid bootstrap v5</small>
-    <small>reset meyerweb</small>
+
+  </div><!-- end container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <small style="color: #adadad;">grid bootstrap v5</small>
+          <br/>
+          <small style="color: #adadad;">reset meyerweb</small>
+        </div>
+      </div>
+    </div>
+
 
     <!-- js -->
     <script src="./js/nini3.js"></script>

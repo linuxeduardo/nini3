@@ -6,8 +6,30 @@
 @import 'shadow';
 @import 'message';
 @import 'border';
-@import 'padding';
+// @import 'padding';
 @import 'form';
 @import 'modal';
 @import 'dropdown';
 @import 'test';
+
+code {
+  white-space: pre;
+  background-color: $color-8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.separator {
+  margin-bottom: 6rem;
+  border-bottom: 1px dashed $color-2;
+  padding-bottom: 3rem;
+}
+
+.sub-title {
+  margin: 0 0 0.5rem;
+}
+.container {
+  & > h2 {
+    text-align: center;
+    color: $orange;
+  }
+}

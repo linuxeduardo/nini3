@@ -19,3 +19,5 @@ window.onclick = function (e) {
     }
   }
 };
+
+// select < and >

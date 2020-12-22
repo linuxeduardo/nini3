@@ -12,7 +12,7 @@
   transition: 0.3s;
   &:hover {
     cursor: pointer;
-    filter: brightness(120%);
+    filter: brightness(130%);
   }
 }
 .btn {
@@ -25,5 +25,14 @@
     background-color: $color-4;
     border: 1px solid $color-4;
     color: $color-1;
+  }
+  &.btn-disabled {
+    color: $color-7;
+    background-color: $color-1;
+    border-color: $color-7;
+    &:hover {
+      cursor: wait;
+      filter: none;
+    }
   }
 }
