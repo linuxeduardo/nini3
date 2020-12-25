@@ -12,7 +12,7 @@
   transition: 0.3s;
   &:hover {
     cursor: pointer;
-    filter: brightness(130%);
+    filter: brightness(120%);
   }
 }
 .btn {
@@ -31,8 +31,44 @@
     background-color: $color-1;
     border-color: $color-7;
     &:hover {
-      cursor: wait;
+      cursor: not-allowed;
       filter: none;
     }
+  }
+  // colors
+  &.btn-white {
+    color: $color-4;
+    background-color: $white;
+    border: 0;
+  }
+  &.btn-yellow {
+    color: $color-1;
+    background-color: $yellow;
+    border: 0;
+  }
+  &.btn-green {
+    color: $color-1;
+    background-color: $green;
+    border: 0;
+  }
+  &.btn-blue {
+    color: $color-1;
+    background-color: $blue;
+    border: 0;
+  }
+  &.btn-orange {
+    color: $color-1;
+    background-color: $orange;
+    border: 0;
+  }
+  &.btn-purple {
+    color: $color-1;
+    background-color: $purple;
+    border: 0;
+  }
+  &.btn-black {
+    color: $color-1;
+    background-color: $black;
+    border: 0;
   }
 }

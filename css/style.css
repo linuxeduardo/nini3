@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap");
 html,
 body,
 div,
@@ -154,6 +155,11 @@ body {
   letter-spacing: 0.01rem;
 }
 
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  white-space: pre-wrap;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -212,8 +218,8 @@ small,
 
 .btn:hover {
   cursor: pointer;
-  -webkit-filter: brightness(130%);
-          filter: brightness(130%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .btn.btn-dark {
@@ -235,9 +241,79 @@ small,
 }
 
 .btn.btn-disabled:hover {
-  cursor: wait;
+  cursor: not-allowed;
   -webkit-filter: none;
           filter: none;
+}
+
+.btn.btn-white {
+  color: #343841;
+  background-color: #fff;
+  border: 0;
+}
+
+.btn.btn-yellow {
+  color: #f2f2f2;
+  background-color: #f4b942;
+  border: 0;
+}
+
+.btn.btn-green {
+  color: #f2f2f2;
+  background-color: #97d8c4;
+  border: 0;
+}
+
+.btn.btn-blue {
+  color: #f2f2f2;
+  background-color: #6b9ac4;
+  border: 0;
+}
+
+.btn.btn-orange {
+  color: #f2f2f2;
+  background-color: #fe5f55;
+  border: 0;
+}
+
+.btn.btn-purple {
+  color: #f2f2f2;
+  background-color: #6a66a3;
+  border: 0;
+}
+
+.btn.btn-black {
+  color: #f2f2f2;
+  background-color: #000;
+  border: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.yellow {
+  color: #f4b942;
+}
+
+.green {
+  color: #97d8c4;
+}
+
+.blue {
+  color: #6b9ac4;
+}
+
+.orange {
+  color: #fe5f55;
+}
+
+.purple {
+  color: #6a66a3;
+}
+
+.black {
+  color: #fff;
 }
 
 /*!
@@ -5065,20 +5141,45 @@ small,
   }
 }
 .message {
-  display: block;
-  min-width: 300px;
-  padding: 1.25rem 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #c5cbd5;
 }
 
-.message.message-light {
-  background-color: #f2f2f2;
-  color: #343841;
-  border: 1px solid #84878c;
+.message .message-header {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
 }
 
-.message.message-dark {
-  background-color: #343841;
-  color: #f2f2f2;
+.message p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.message.message-warning {
+  border-color: rgba(255, 255, 0, 0.5);
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.message.message-warning .message-header {
+  color: #f4b942;
+}
+
+.message.message-warning p {
+  color: #f4b942;
+}
+
+.message.message-danger {
+  border-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.message.message-danger .message-header {
+  color: #fa4444;
+}
+
+.message.message-danger p {
+  color: #fa4444;
 }
 
 form {
@@ -5185,6 +5286,10 @@ form > div input {
   text-align: center;
 }
 
+.dropdown .btn-dropdown:hover {
+  cursor: pointer;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -5209,33 +5314,71 @@ form > div input {
   display: block;
 }
 
-body {
-  margin-bottom: 15rem;
+.jumbo {
+  background-color: #343841;
+  color: #fff;
 }
 
-.test-grid .row > div {
-  outline: 1px solid #84878c;
+.code-schema {
+  margin: 0.5rem 0 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: solid 1px;
+  position: relative;
+  margin: 30px 0px;
+  color: #84878c;
+  font-size: 0.8rem;
+}
+
+.divider::before {
+  content: 'OR';
+  position: absolute;
+  left: 47%;
+  top: -10px;
+  background-color: #f2f2f2;
+  padding: 0px 10px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+  color: #84878c;
 }
 
 code {
-  white-space: pre;
-  background-color: #dfe3e9;
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
 }
 
-.separator {
-  margin-bottom: 6rem;
-  border-bottom: 1px dashed #84878c;
-  padding-bottom: 3rem;
+pre {
+  border: 1px solid #5e6673;
+  word-break: break-all;
+  white-space: normal;
+  color: #f2f2f2;
 }
 
 .sub-title {
-  margin: 0 0 0.5rem;
+  color: #fe5f55;
 }
 
-.container > h2 {
-  text-align: center;
-  color: #fe5f55;
+h3 {
+  position: relative;
+}
+
+h3::after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: #fe5f55;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #212226;
+  color: #fff;
+  padding: 3rem 0;
 }
 /*# sourceMappingURL=style.css.map */

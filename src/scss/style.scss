@@ -6,30 +6,68 @@
 @import 'shadow';
 @import 'message';
 @import 'border';
-// @import 'padding';
 @import 'form';
 @import 'modal';
 @import 'dropdown';
-@import 'test';
 
-code {
-  white-space: pre;
-  background-color: $color-8;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+.jumbo {
+  background-color: $color-4;
+  color: $white;
 }
-
-.separator {
-  margin-bottom: 6rem;
-  border-bottom: 1px dashed $color-2;
-  padding-bottom: 3rem;
+.code-schema {
+  margin: 0.5rem 0 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ddd;
 }
-
-.sub-title {
-  margin: 0 0 0.5rem;
-}
-.container {
-  & > h2 {
-    text-align: center;
-    color: $orange;
+.divider {
+  width: 100%;
+  border-bottom: solid 1px;
+  position: relative;
+  margin: 30px 0px;
+  color: $color-2;
+  font-size: 0.8rem;
+  &::before {
+    content: 'OR';
+    position: absolute;
+    left: 47%;
+    top: -10px;
+    background-color: $color-1;
+    padding: 0px 10px;
+    font-family: 'IBM Plex Mono', monospace;
   }
 }
+p {
+  color: $color-2;
+}
+code {
+  font-size: 0.8rem;
+}
+pre {
+  border: 1px solid $color-3;
+  word-break: break-all;
+  white-space: normal;
+  color: $color-1;
+}
+.sub-title {
+  color: $orange;
+}
+
+h3 {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 5px;
+    background-color: $orange;
+    margin-top: 10px;
+  }
+}
+
+.footer {
+  background-color: $color-5;
+  color: $white;
+  padding: 3rem 0;
+}
+// TODO:  image rounded, input AND button side by side
+// loader
